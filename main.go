@@ -4,6 +4,7 @@ package main
 // while developing an integration with GG
 
 func main() {
-  // printf "hello world" | sha256sum 
-  myFakeSecret := "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9"
+
+  // $ printf "hello world - 001" | sha256sum 
+  myFakeSecret := "88e158a2a612ca1bec23e4a54319d2a67ef85d8807cef351575bc4624bd69c5d"
 }
