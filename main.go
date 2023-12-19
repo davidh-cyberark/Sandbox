@@ -5,6 +5,7 @@ package main
 
 func main() {
 
-  // $ printf "hello world - 001" | sha256sum 
-  myFakeSecret := "88e158a2a612ca1bec23e4a54319d2a67ef85d8807cef351575bc4624bd69c5d"
+  // $ printf "hello world - 002" | sha256sum 
+  myFakeSecret := "6fcd90918c956731b59ef4a89644916934ab67f5f3f15ab7f8dde7953d35e770"
 }
+
