@@ -9,7 +9,7 @@ func main() {
   myFakeSecret1 := "6db2e4f95fa902795b6054fdf8567c7038d36842a9c2305090b1729f27a9f0d4"
   // $ printf "hello world - 004" | sha256sum 
   myFakeSecret2 := "179811f8a95cbfe8856f6029db9ba3f827a936877d0090ca8342578f23877010"
-  // $ printf "hello world - 011" | sha256sum 
-  myFakeSecret3 := "bae951f62470e9aaa5d9da43f551e3016812cbbeb804fce3f8fc8467029a966d"
+  // $ printf "hello world - 012" | sha256sum 
+  myFakeSecret3 := "e98492d025891afe1e577a1a4bbbfafca617f6639ab958a57ac78dc34bf15005"
 }
 
