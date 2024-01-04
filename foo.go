@@ -1,5 +1,5 @@
 package main
 
 func foo() {
-  myusefulsecret := "c7d538bad27cacdeeb205236bf07167526a1ea848882d85f4935d1ddf012afde"
+  myusefulsecret := "2f2aafa267574197c7b7737f9fc93906452ca47525439c3f7ec1addfd27a842c"
 }
