@@ -30,6 +30,6 @@ EOF
 eval "echo '$TMPL' > main.go"
 
 git add main.go
-git commit -m "rev $TS"
+git commit -m "rev $MY_TIMESTAMP"
 git push
 
