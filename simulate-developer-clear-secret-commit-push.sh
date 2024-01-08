@@ -6,15 +6,10 @@ if [ -z "$MY_TIMESTAMP" ]; then
     exit 1
 fi
 
-export HASH="$(printf 'hello world - %s' $MY_TIMESTAMP | sha256sum | awk '{print $1}')"
-if [ -z "$HASH" ]; then
-    echo "Empty hash, exiting."
-    exit 2
-fi
-
 read -r -d '' TMPL <<-EOF
 	package main
 	import (
+		"os"
 		"log"
 	)
 	
@@ -22,8 +17,12 @@ read -r -d '' TMPL <<-EOF
 	// while developing an integration with GG
 	
 	func main() {
-	  // $ printf "hello world - $MY_TIMESTAMP" | sha256sum 
-	  myFakeSecret := "$HASH"
+	  // $ HASH_VARNAME=\$(printf "hello world - $MY_TIMESTAMP" | sha256sum)
+
+	  myFakeSecret, ok := os.LookupEnv("HASH_VARNAME")
+	  if !ok {
+	    panic("failed to lookup hash env var")
+	  }
 	  log.Println(myFakeSecret)
 	}
 EOF
