@@ -5,8 +5,11 @@ import "os"
 // while developing an integration with GG
 
 func main() {
-  // $ printf "hello world - 1704730669" | sha256sum 
+  // $ printf "hello world - 1704730720" | sha256sum 
   if myFakeSecret, e := os.LookupEnv("HASH_VARNAME"); e != nil {
     panic(e)
+  }
+  if len(myFakeSecret) == 0 {
+    panic("hash var not set")
   }
 }
