@@ -1,5 +1,6 @@
 package main
 import (
+"os"
 "log"
 )
 
@@ -7,7 +8,11 @@ import (
 // while developing an integration with GG
 
 func main() {
-  // $ printf "hello world - 1704837308" | sha256sum 
-  myFakeSecret := "a56ca5d2f76309dc2be38f487f9e0a608388f49d5da35ffac4523e03c1abef6e"
+  // $ HASH_VARNAME=$(printf "hello world - 1704839197" | sha256sum)
+
+  myFakeSecret, ok := os.LookupEnv("HASH_VARNAME")
+  if !ok {
+    panic("failed to lookup hash env var")
+  }
   log.Println(myFakeSecret)
 }
