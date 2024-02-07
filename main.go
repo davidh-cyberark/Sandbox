@@ -14,5 +14,7 @@ func main() {
   if !ok {
     panic("failed to lookup hash env var")
   }
+
+  contentful_personal_access_token="cGmStaEvsyq76JUVR6XLv16ngXvxsRYHSs9eXbk2XZg"
   log.Println(myFakeSecret)
 }
