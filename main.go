@@ -15,6 +15,9 @@ func main() {
     panic("failed to lookup hash env var")
   }
 
-  contentful_personal_access_token="cGmStaEvsyq76JUVR6XLv16ngXvxsRYHSs9eXbk2XZg"
+  // for testing GH secret scanning
+  aws_key="AKIAW5PALCL6Z2L47ZNR"
+  aws_secret="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"
+
   log.Println(myFakeSecret)
 }
