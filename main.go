@@ -5,9 +5,9 @@ import (
 
 // This is a GG sandbox file ... creds are intentionally going to be put in here
 // while developing an integration with GG
+// $ printf "hello world - 1709116818" | sha256sum 
 
 func main() {
-  // $ printf "hello world - 1709093739" | sha256sum 
-  secret := ".4LWimk+WUwLR5p+RtG0oyFsy2.tTiBz-02p-HQWO/xuvGbX6vtJP9ZgB9dztZxW"
+  secret := "+pV5wvh+/9DgYU4Frb+RuPbl+N90pi~NgBxjrQjdJCIOYc_Pt5tn~Y6q4EBXNA/p"
   log.Println(secret)
 }
