@@ -8,7 +8,7 @@ import (
 // while developing an integration with GG
 
 func main() {
-  // $ HASH_VARNAME=$(printf "hello world - 1709133796" | sha256sum)
+  // $ HASH_VARNAME=$(printf "hello world - 1709133798" | sha256sum)
 
   secret, ok := os.LookupEnv("HASH_VARNAME")
   if !ok {
