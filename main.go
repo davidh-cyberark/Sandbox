@@ -1,13 +1,18 @@
 package main
 import (
+"os"
 "log"
 )
 
 // This is a GG sandbox file ... creds are intentionally going to be put in here
 // while developing an integration with GG
-// $ printf "hello world - 1709116818" | sha256sum 
 
 func main() {
-  secret := "+pV5wvh+/9DgYU4Frb+RuPbl+N90pi~NgBxjrQjdJCIOYc_Pt5tn~Y6q4EBXNA/p"
+  // $ HASH_VARNAME=$(printf "hello world - 1709133796" | sha256sum)
+
+  secret, ok := os.LookupEnv("HASH_VARNAME")
+  if !ok {
+    panic("failed to lookup hash env var")
+  }
   log.Println(secret)
 }
