@@ -7,7 +7,7 @@ import (
 // while developing an integration with GG
 
 func main() {
-  // $ printf "hello world - 1709092693" | sha256sum 
-  secret := "Qq;.xY1cYJEPL0j0U6gxujevRrJWSJRJ"
+  // $ printf "hello world - 1709092847" | sha256sum 
+  secret := "dcNPJ3nV/yX~vfeVyLvf9zHi~XMACu1O"
   log.Println(secret)
 }
