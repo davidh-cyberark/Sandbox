@@ -1,24 +1,18 @@
 package main
 
-// Updated: <2024/03/22 21:42:27>
+// Updated: <2024/03/22 21:43:08>
 
 // This is a GG sandbox file ... creds are intentionally going to be put in here
 // while developing an integration with GG
 
 import (
 	"log"
-	"os"
 )
 
 func main() {
-	username, ok := os.LookupEnv("SANDBOX_USERNAME")
-	if !ok {
-		panic("failed to lookup env var")
-	}
-	password, ok := os.LookupEnv("SANDBOX_PASSWORD")
-	if !ok {
-		panic("failed to lookup env var")
-	}
+	username := "demouser1"
+	password := "ytLD51mDw-P-8PCil1A3pkEBlxODkIbLS0KVmkSAk7geRNxzl/Zh2/.fTVs46KS3"
+
 	if len(username) == 0 || len(password) == 0 {
 		panic("username or password is not set")
 	}
