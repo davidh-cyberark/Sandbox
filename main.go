@@ -10,13 +10,11 @@ import (
 )
 
 func main() {
-	username := "demouser1"
 	var password string
-
 	password = os.GetEnv("mypas")
 
-	if len(username) == 0 || len(password) == 0 {
-		panic("username or password is not set")
+	if len(password) == 0 {
+		panic("password is not set")
 	}
-	log.Printf("username is %s, and password is %s\n", username, password)
+	log.Printf("password is %s\n", password)
 }
