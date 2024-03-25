@@ -11,7 +11,7 @@ import (
 
 func main() {
 	username := "demouser1"
-	secret := os.LookupEnv("mysecret")
+	secret := "helloLKH98y%$"
 
 	if len(username) == 0 || len(secret) == 0 {
 		panic("username or password is not set")
