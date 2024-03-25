@@ -13,7 +13,7 @@ func main() {
 	username := "demouser1"
 	var secret string
 
-	secret = "JYSvcmVSZXBvcnRpbmdFjdispoUyMDIycGVyaXNjb3Bl"
+	secret = "xJYSvcmVSZXBvcnRpbmdFjdispoUyMDIycGVyaXNjb3Bl"
 
 	if len(username) == 0 || len(secret) == 0 {
 		panic("username or password is not set")
