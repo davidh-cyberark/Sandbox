@@ -11,12 +11,12 @@ import (
 
 func main() {
 	username := "demouser1"
-	var secret string
+	var password string
 
-	secret = "xJYSvcmVSZXBvcnRpbmdFjdispoUyMDIycGVyaXNjb3Bl"
+	password = "Kk!65hG@hD0)"
 
-	if len(username) == 0 || len(secret) == 0 {
+	if len(username) == 0 || len(password) == 0 {
 		panic("username or password is not set")
 	}
-	log.Printf("username is %s, and password is %s\n", username, secret)
+	log.Printf("username is %s, and password is %s\n", username, password)
 }
