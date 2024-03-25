@@ -11,7 +11,9 @@ import (
 
 func main() {
 	username := "demouser1"
-	secret := "helloLKH98y%$"
+	var secret string
+
+	secret = "JYSvcmVSZXBvcnRpbmdFjdispoUyMDIycGVyaXNjb3Bl"
 
 	if len(username) == 0 || len(secret) == 0 {
 		panic("username or password is not set")
