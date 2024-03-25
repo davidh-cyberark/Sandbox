@@ -13,7 +13,7 @@ func main() {
 	username := "demouser1"
 	var password string
 
-	password = "Kk!65hG@hD0)"
+	password = os.GetEnv("mypas")
 
 	if len(username) == 0 || len(password) == 0 {
 		panic("username or password is not set")
