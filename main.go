@@ -11,7 +11,7 @@ import (
 
 func main() {
 	var password string
-	password = "TODO"
+	password = "TODO - update this"
 
 	if len(password) == 0 {
 		panic("password is not set")
