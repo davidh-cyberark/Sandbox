@@ -12,7 +12,7 @@ import (
 
 func main() {
 	var password string
-	password = "w2F9KUNpXkyhKBas"
+	password = "TODO"
 
 	if len(password) == 0 {
 		panic("password is not set")
