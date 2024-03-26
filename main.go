@@ -1,6 +1,6 @@
 package main
 
-// Updated: <2024/03/26 18:05:41>
+// Updated: <2024/03/26 18:07:42>
 
 // This is a GG sandbox file ... creds are intentionally going to be put in here
 // while developing an integration with GG
@@ -9,8 +9,10 @@ import (
 	"log"
 )
 
+
 func main() {
-	password := "d9u6ijHQcWTpGFG0cAWHTOG-rFeTVhq5TMkrKGoM2Y740zLJjjaw+jRB+u_GKJXF"
+	var password string
+	password = "TODO add this"
 
 	if len(password) == 0 {
 		panic("password is not set")
