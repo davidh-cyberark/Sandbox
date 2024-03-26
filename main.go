@@ -1,21 +1,18 @@
 package main
-
-// Updated: <2024/03/26 00:32:52>
+import (
+"os"
+"log"
+)
 
 // This is a GG sandbox file ... creds are intentionally going to be put in here
 // while developing an integration with GG
 
-import (
-	"log"
-)
-
-
 func main() {
-	var password string
-	password = "TODO add this"
+  // $ HASH_VARNAME=$(printf "hello world - 1711413363" | sha256sum)
 
-	if len(password) == 0 {
-		panic("password is not set")
-	}
-	log.Printf("password is %s\n", password)
+  myFakeSecret, ok := os.LookupEnv("HASH_VARNAME")
+  if !ok {
+    panic("failed to lookup hash env var")
+  }
+  log.Println(myFakeSecret)
 }
