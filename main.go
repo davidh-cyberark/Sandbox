@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	password := "2-fEeZ/PgWfGuF1t2r/D-XPoQHOoJjb.+7SnqdjspuV8b6rlXvMNNtkuhd7LW1vn"
+	password := "TODO"
 
 	if len(password) == 0 {
 		panic("password is not set")
